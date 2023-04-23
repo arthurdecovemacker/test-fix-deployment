@@ -1,0 +1,17 @@
+{
+    "transform": {
+        "^.+\\.svelte$": [
+          "svelte-jester",
+          {
+            "preprocess": true
+          }
+        ],
+        "^.+\\.ts$": "ts-jest"
+    },
+    "testEnvironment": "jsdom",
+    "moduleFileExtensions": [
+        "js",
+        "ts",
+        "svelte"
+    ]
+} 

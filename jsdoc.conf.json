@@ -1,0 +1,60 @@
+{
+    "tags": {
+        "allowUnknownTags": true,
+        "dictionaries": [
+            "jsdoc",
+            "closure"
+        ]
+    },
+    "source": {
+        "include": [
+            "src/lib/functions/",
+            "src/routes/api"
+        ],
+        "includePattern": ".+\\.(js|ts)?$",
+        "excludePattern": ""
+    },
+    "plugins": [
+        "plugins/markdown",
+        "node_modules/better-docs/category"
+    ],
+    "opts": {
+        "encoding": "utf8",
+        "destination": "docs/",
+        "readme": "README.md",
+        "recurse": true,
+        "verbose": true,
+        // "tutorials": "./docs-src/tutorials",
+        "template": "node_modules/better-docs"
+    },
+    "templates": {
+        "cleverLinks": false,
+        "monospaceLinks": false,
+        "search": true,
+        "default": {
+            "staticFiles": {
+                "include": [
+                    // "./docs-src/statics"
+                ]
+            }
+        },
+        "better-docs": {
+            "name": "DEDAL Website Documentation",
+            // "logo": "../assets/logo.png",
+            "title": "DEDAL Website Documentation",
+            "css": "style.css",
+            // "trackingCode": "tracking-code-which-will-go-to-the-HEAD",
+            "hideGenerator": false,
+            "navLinks": [
+                {
+                    "label": "Github",
+                    "href": "https://github.com/DEDAL-eip/ShowcaseWebsite"
+                },
+                {
+                    "label": "Web Site",
+                    "href": "http://eip.epitech.eu/2024/dedal"
+                }
+            ]
+        }
+    }
+}
